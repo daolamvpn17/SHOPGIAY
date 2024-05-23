@@ -1,0 +1,264 @@
+/* styles.css */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+.container{
+    position: fixed;
+    width: 100%;
+}
+.header {
+    background-color: #ffffff;
+    color: rgb(108, 108, 108);
+    width: 100%;
+}
+
+.header .logo {
+    padding-left: 150px;
+    flex-direction: column;/*các phần tử của thẻ theo cột*/
+    align-items: center;/*căn giữa all các mục của thẻ*/
+    justify-content: center;/*cho all các thẻ ở giữa*/
+}
+
+.header .logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+.header .shop-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .logo a .shop-name {
+    text-decoration: none;
+}
+
+.header .search-box {
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 350px;
+}
+
+.header .rounded-search {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    width: 300px;
+    height: 25px;
+    border-radius: 60px;
+}
+
+.header .fa-search {
+    margin-left: -25px;
+    color: gray;
+}
+
+.header .login-container {
+    margin-top: 30px;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end; /*giống như float right*/
+}
+
+.header .login-container a {
+    background-color: #004080;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.header .login-container a:hover {
+    background-color: #136ccc;
+    color: #fff;
+}
+
+
+.menu{
+    background-color: #004080;
+
+}
+
+.super_menu {
+    display: flex;
+    justify-content: center;
+   /* Thêm margin bottom để tạo khoảng cách với phần content */
+}
+
+.super_menu li {
+    list-style: none;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: #ffffff;
+    cursor: pointer; /* Đổi con trỏ thành bàn tay khi rê chuột qua */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+    text-decoration: none;
+    position: relative;
+}
+.super_menu li:first-child{
+    width: 200px
+}
+.super_menu li{
+    font-size: 18px;
+    font-family: Tahoma;
+}
+
+.super_menu li:hover {
+    background-color: #C0C0C0;
+    color: black;
+}
+#dmsp:hover{
+    background-color:#070766;
+    color: white;
+}
+#trang_chu{
+    background-color: #C0C0C0;
+    color: black;
+}
+.menu .super_menu li a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub_menu{
+    position: absolute;
+    top: 42px;
+    left: -1px;
+}
+.sub_menu li{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    text-align: left;
+    width: 200px;
+    height: 30px;
+}
+ .sub_menu li img{
+    border: 1px solid white;
+    border-radius: 50%;
+    height:30px;
+}
+.sub_menu>li>a{
+    margin-top: -27px ;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.sub_menu >li:first-child >a{
+    margin-left: -10px;
+}
+.sub_menu >li:nth-child(2) >a{
+    margin-left: -38px;
+}
+.sub_menu >li:nth-child(4) >a{
+    margin-left: -36px;
+}
+.sub_menu >li:nth-child(5) >a{
+    margin-left: 13px;
+}
+.sub_menu >li:last-child >a{
+    margin-left: 25px;
+}
+.sub_menu >li:hover{
+    color: #136ccc;
+    background-color: white;
+}
+
+.icon_lienlac{
+     margin-top:400px;
+     position: fixed;
+}
+.icon_lienlac li{
+    position: relative;
+}
+.icon_lienlac li img{
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.sub_icon li{
+    display: none;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -40px; 
+    list-style: none; 
+    border: 1px solid white;
+    border-radius:50% ;
+    background-color:rgb(7, 7, 130);
+    padding: 5px;
+}
+.icon_lienlac li:hover .sub_icon li{
+    display: block;
+}
+.sub_icon li a{
+   text-decoration: none;
+   color: white;
+}
+.sub2_menu{
+    margin-left: 220px;
+    margin-top: -38px;
+}
+.sub2_menu li a{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.sub2_menu li:first-child a{
+    margin-left: -100px;
+}
+.sub2_menu li:nth-child(2) a{
+    margin-left: -110px;
+}
+.sub2_menu li:nth-child(3) a{
+    margin-left: -90px;
+}
+.sub2_menu li{
+    display: none;
+}
+.sub2_menu li:hover{
+    background-color: #004080;
+    color: white;
+}
+.sub_menu li:hover .sub2_menu li{
+    border-left:5px solid #004080 ;
+    display: block;
+}
+@media (max-width: 600px) {
+    .header, .menu {
+        display: block;
+    }
+
+    .header td{
+        display: block;
+        width: 100%;
+        border: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .header .logo, .header .search-box, .header .login-container {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .header .rounded-search {
+        width: calc(100% - 40px);
+    }
+}
